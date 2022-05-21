@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Badge, Card } from 'react-bootstrap'
 import './styles.css'
 
 const Projects = () => {
@@ -14,14 +14,20 @@ const Projects = () => {
             style={{ width: '18rem' }}
             className="mb-2"
           >
-            <Card.Header>Header</Card.Header>
+            <Card.Header>Tweeter</Card.Header>
             <Card.Body>
-              <Card.Title>dark Card Title </Card.Title>
+              <Card.Title>Twitter Clone</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
+              A single page twitter clone application.
               </Card.Text>
             </Card.Body>
+            <Card.Footer>
+              <Badge bg="primary">React</Badge> {' '}
+              <Badge bg="secondary">HTML</Badge> {' '}
+              <Badge bg="primary">CSS</Badge> {' '}
+              <Badge bg="secondary">PostgreSQL</Badge> {' '}
+
+            </Card.Footer>
           </Card>
         </div>
       </div>
