@@ -1,3 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1127" height="1127" viewBox="0 0 1127 1127">
-  <circle id="Ellipse_5" data-name="Ellipse 5" cx="220" cy="220" r="220" fill="rgba(37,145,137,0.31)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1376.728" height="1204.623" viewBox="0 0 1376.728 1204.623">
+  <circle id="Ellipse_3" data-name="Ellipse 3" cx="441" cy="441" r="441" transform="matrix(-0.454, -0.891, 0.891, -0.454, 400.42, 1186.287)" fill="rgba(37,145,137,0.31)"/>
+  <g id="Ellipse_4" data-name="Ellipse 4" transform="matrix(-0.454, -0.891, 0.891, -0.454, 590.861, 1204.623)" fill="none" stroke="#e200ff" stroke-width="1">
+    <circle cx="441" cy="441" r="441" stroke="none"/>
+    <circle cx="441" cy="441" r="440.5" fill="none"/>
+  </g>
 </svg>
+
