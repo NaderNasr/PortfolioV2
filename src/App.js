@@ -3,17 +3,18 @@ import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Projects from "./components/Porjects/Projects";
+import Project from "./components/Projects/ProjectGrid/Project";
+
 
 const App = () => {
   return (
     <>
-        <Header />
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
+      <Header />
+      <Hero />
+      <About />
+      <Experience />
+      <Project />
+      <Contact />
     </>
   );
 }
