@@ -14,11 +14,10 @@ const Projects = () => {
             style={{ width: '18rem' }}
             className="mb-2"
           >
-            <Card.Header>Tweeter</Card.Header>
             <Card.Body>
               <Card.Title>Twitter Clone</Card.Title>
               <Card.Text>
-              A single page twitter clone application.
+                A single page twitter clone application.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -26,7 +25,28 @@ const Projects = () => {
               <Badge bg="secondary">HTML</Badge> {' '}
               <Badge bg="primary">CSS</Badge> {' '}
               <Badge bg="secondary">PostgreSQL</Badge> {' '}
+            </Card.Footer>
+          </Card>
 
+          <br />
+
+          <Card
+            bg='dark'
+            text='white'
+            style={{ width: '18rem' }}
+            className="mb-2"
+          >
+            <Card.Body>
+              <Card.Title>Twitter Clone</Card.Title>
+              <Card.Text>
+                A single page twitter clone application.
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <Badge bg="primary">React</Badge> {' '}
+              <Badge bg="secondary">HTML</Badge> {' '}
+              <Badge bg="primary">CSS</Badge> {' '}
+              <Badge bg="secondary">PostgreSQL</Badge> {' '}
             </Card.Footer>
           </Card>
         </div>
