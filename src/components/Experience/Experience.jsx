@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Badge, Card } from 'react-bootstrap'
+import { motion } from 'framer-motion'
 import './styles.css'
 
 
@@ -28,13 +29,22 @@ const Experience = () => {
     <div className='experience-container'>
       <div className='experience-text-container'>
         <p className='experience-text-header'>Experience<hr /></p>
+        <motion.div
+                  initial={{ opacity: 0, x: 300 }}
+                  transition={{ ease: "easeOut", duration: 1.2 }}
+                  animate={{ x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                >
         <Card
           bg='dark'
           text='white'
           style={{ width: '100%' }}
           className="mb-2"
         >
-          <Card.Header>OjaBox - Dubai, UAE</Card.Header>
+          <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <p>OjaBox - Dubai, UAE</p>
+            <p>Jan 2019 - Dec 2019</p>
+          </Card.Header>
           <Card.Body>
             <Card.Title>Junior Front-End Developer</Card.Title>
             {readMore ?
@@ -48,7 +58,7 @@ const Experience = () => {
                     <li>Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
                   </ul>
                 </Card.Text>
-                <span onClick={toggleReadMore} style={{ color: '#37f713' }}>Read Less</span>
+                <span onClick={toggleReadMore} style={{ color: '#E200FF' }}>Read Less</span>
               </>
               :
               <>
@@ -64,14 +74,24 @@ const Experience = () => {
             {' '} <Badge bg="primary"> Material UI</Badge> {' '}
           </Card.Footer>
         </Card>
+        </motion.div>
         <br />
+        <motion.div
+                  initial={{ opacity: 0, x: 300 }}
+                  transition={{ ease: "easeOut", duration: 1.2 }}
+                  animate={{ x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                >
         <Card
           bg='dark'
           text='white'
           style={{ width: '100%' }}
           className="mb-2"
         >
-          <Card.Header>360VUZ - Dubai, UAE</Card.Header>
+          <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <p>360VUZ - Dubai, UAE</p>
+            <p>Aug 2016 - Jan 2018</p>
+          </Card.Header>
           <Card.Body>
             <Card.Title>Technical Project Manager</Card.Title>
 
@@ -88,7 +108,7 @@ const Experience = () => {
                       performance and helped grow downloads from 50,000 in the first year to over 500,000 in the second year by optimizing the functionality</li>
                   </ul>
                 </Card.Text>
-                <span onClick={toggleReadMore2} style={{ color: '#37f713' }}>Read Less</span>
+                <span onClick={toggleReadMore2} style={{ color: '#E200FF' }}>Read Less</span>
               </>
               :
               <>
@@ -103,34 +123,44 @@ const Experience = () => {
             {' '} <Badge bg="primary">Skype</Badge> {' '}
           </Card.Footer>
         </Card>
+        </motion.div>
         <br />
+        <motion.div
+                  initial={{ opacity: 0, x: 300 }}
+                  transition={{ ease: "easeOut", duration: 1.2 }}
+                  animate={{ x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                >
         <Card
           bg='dark'
           text='white'
           style={{ width: '100%' }}
           className="mb-2"
         >
-          <Card.Header>Rubicon Group Holding - Amman, Jordan</Card.Header>
+          <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <p>Rubicon Group Holding - Amman, Jordan</p>
+            <p>Aug 2014 - Jan 2016</p>
+          </Card.Header>
           <Card.Body>
             <Card.Title>Junior Virtual Reality Unity3D Developer</Card.Title>
-            {readMore3 ? 
+            {readMore3 ?
               <>
-            <Card.Text>
-              Developed applications and educational games for the Oculus Gear VR using Unity 5
-              Liaised with team members throughout the software development lifecycle to achieve established milestones.
-              <ul>
-                <br />
-                <p>Key Achievements:</p>
-                <li>Created an interactive digital comic book for kids using Unity 5 that could be played on their mobile devices.</li>
-              </ul>
+                <Card.Text>
+                  Developed applications and educational games for the Oculus Gear VR using Unity 5
+                  Liaised with team members throughout the software development lifecycle to achieve established milestones.
+                  <ul>
+                    <br />
+                    <p>Key Achievements:</p>
+                    <li>Created an interactive digital comic book for kids using Unity 5 that could be played on their mobile devices.</li>
+                  </ul>
 
-            </Card.Text>
-            <span onClick={toggleReadMore3} style={{ color: '#37f713' }}>Read Less</span>
-            </>
-            :
-            <>
-            <span onClick={toggleReadMore3} style={{ color: 'orange' }}>Read More</span>
-            </>
+                </Card.Text>
+                <span onClick={toggleReadMore3} style={{ color: '#E200FF' }}>Read Less</span>
+              </>
+              :
+              <>
+                <span onClick={toggleReadMore3} style={{ color: 'orange' }}>Read More</span>
+              </>
             }
           </Card.Body>
           <Card.Footer>
@@ -139,6 +169,7 @@ const Experience = () => {
             {' '} <Badge bg="primary">Trello</Badge> {' '}
           </Card.Footer>
         </Card>
+        </motion.div>
       </div>
     </div>
   )
