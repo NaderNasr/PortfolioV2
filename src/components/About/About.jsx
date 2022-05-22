@@ -15,11 +15,10 @@ const About = () => {
             <Col>
               <div className='about-text-container'>
                 <motion.div
-
-                  initial={{ opacity: 0, x: -300 }}
+                  initial={{ opacity: 0, x: 300 }}
                   transition={{ ease: "easeOut", duration: 1.2 }}
                   animate={{ x: 0 }}
-                  whileInView={{ opacity: 1, y: -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                 >
                   <p className='about-text-header'>About Me <hr /></p>
                   <div>
@@ -32,31 +31,48 @@ const About = () => {
                       Below are the technologies I am currently working with (and growings!):
                     </p>
                   </div>
-                  <br/>
+                  <br />
                   <Container>
                     <Row>
                       <Col>
+                        <p className='about-list-title'>FRONT-END:</p>
                         <ul className='about-list'>
                           <li>React</li>
+                          <li>Axios</li>
+                          <li>Webpack</li>
+                          <li>CSS</li>
+                          <li>HTML</li>
+                          <li>Svelte</li>
+                        </ul>
+
+                        <p className='about-list-title'>BACK-END:</p>
+                        <ul className='about-list'>
+                          <li>Express</li>
                           <li>Node.js</li>
-                          <li>JavaScript (ES6+)</li>
+                          <li>PostgreSQL</li>
+                          <li>AWS</li>
                         </ul>
                       </Col>
                       <Col>
+                        <p className='about-list-title'>LANGUAGES:</p>
                         <ul className='about-list'>
-                          <li>React</li>
-                          <li>Node.js</li>
                           <li>JavaScript (ES6+)</li>
+                          <li>Ruby on Rails</li>
+                          <li>Ruby</li>
                         </ul>
+
+                        <p className='about-list-title'>TESTING:</p>
+                        <ul className='about-list'>
+                          <li>Jest</li>
+                          <li>Cypress</li>
+                          <li>Mocha/Chai</li>
+                        </ul>
+
                       </Col>
-                      <Col></Col>
                     </Row>
                   </Container>
                 </motion.div>
               </div>
-            </Col>
-            <Col>
-              <img alt='about' src={Dummy} style={{ width: '25vw', marginTop: '80px' }} />
             </Col>
           </Row>
         </Container>
