@@ -4,7 +4,7 @@
 .experience-container {
   background-color: #0a192f;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .experience-text-container {
@@ -12,7 +12,7 @@
 }
 
 .experience-text-header {
-  color: white;
+  color: #FC9E4F;
   font-family: Roboto Mono;
   font-size: 40px;
 }
