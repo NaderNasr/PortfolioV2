@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="51.37" height="77" viewBox="0 0 51.37 77">
-  <text id="N" transform="translate(2.538 58)" fill="#5edbf2" font-size="60" font-family="Silom"><tspan x="0" y="0">N</tspan></text>
-  <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(41.535 13.067) rotate(75)" fill="none" stroke="#e200ff" stroke-width="3">
-    <ellipse cx="19" cy="21.5" rx="19" ry="21.5" stroke="none"/>
-    <ellipse cx="19" cy="21.5" rx="17.5" ry="20" fill="none"/>
-  </g>
-  <rect id="Rectangle_3" data-name="Rectangle 3" width="5" height="15" transform="translate(37.538 20)" fill="#5edbf2"/>
-  <rect id="Rectangle_4" data-name="Rectangle 4" width="5" height="15" transform="translate(7.538 39)" fill="#5edbf2"/>
+  <text id="N" transform="translate(2.538 58)" fill="#FC9E4F" font-size="60" font-family="Silom"><tspan x="0" y="0">N</tspan></text>
+  <rect id="Rectangle_3" data-name="Rectangle 3" width="5" height="15" transform="translate(37.538 20)" fill="#FC9E4F"/>
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="5" height="15" transform="translate(7.538 39)" fill="#FC9E4F"/>
 </svg>
