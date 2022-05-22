@@ -2,6 +2,10 @@
 
 .backgroundColor {
   background-color: #0a192f;
+  position: sticky !important;
+  top: 0px;
+  z-index: 99;
+
 }
 
 .navLink {
