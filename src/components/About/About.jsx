@@ -1,8 +1,7 @@
 import React from 'react'
 import './styles.css'
 import { motion } from 'framer-motion'
-import { Col, Container, Row } from 'react-bootstrap'
-import Dummy from '../../assets/about-dummy.jpg'
+import { Badge, Col, Container, Row } from 'react-bootstrap'
 
 const About = () => {
   return (
@@ -14,13 +13,13 @@ const About = () => {
           <Row>
             <Col>
               <div className='about-text-container'>
+                <p className='about-text-header'>About Me <hr /></p>
                 <motion.div
                   initial={{ opacity: 0, x: 300 }}
                   transition={{ ease: "easeOut", duration: 1.2 }}
-                  animate={{ x: 0 }}
+                  animate={{ x: 100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                 >
-                  <p className='about-text-header'>About Me <hr /></p>
                   <div>
                     <p className='about-text-desc'>
                       Hello! My name is Nader and I enjoy creating things
@@ -37,35 +36,35 @@ const About = () => {
                       <Col>
                         <p className='about-list-title'>FRONT-END:</p>
                         <ul className='about-list'>
-                          <li>React</li>
-                          <li>Axios</li>
-                          <li>Webpack</li>
-                          <li>CSS</li>
-                          <li>HTML</li>
-                          <li>Svelte</li>
+                          <Badge>React</Badge>{' '}
+                          <Badge>Axios</Badge>{' '}
+                          <Badge>Webpack</Badge>{' '}
+                          <Badge>CSS</Badge>{' '}
+                          <Badge>HTML</Badge>{' '}
+                          <Badge>Svelte</Badge>{' '}
                         </ul>
 
                         <p className='about-list-title'>BACK-END:</p>
                         <ul className='about-list'>
-                          <li>Express</li>
-                          <li>Node.js</li>
-                          <li>PostgreSQL</li>
-                          <li>AWS</li>
+                          <Badge>Express</Badge>{' '}
+                          <Badge>Node.js</Badge>{' '}
+                          <Badge>PostgreSQL</Badge>{' '}
+                          <Badge>AWS</Badge>{' '}
                         </ul>
                       </Col>
                       <Col>
                         <p className='about-list-title'>LANGUAGES:</p>
                         <ul className='about-list'>
-                          <li>JavaScript (ES6+)</li>
-                          <li>Ruby on Rails</li>
-                          <li>Ruby</li>
+                          <Badge>JavaScript (ES6+)</Badge>{' '}
+                          <Badge>Ruby on Rails</Badge>{' '}
+                          <Badge>Ruby</Badge>{' '}
                         </ul>
 
                         <p className='about-list-title'>TESTING:</p>
                         <ul className='about-list'>
-                          <li>Jest</li>
-                          <li>Cypress</li>
-                          <li>Mocha/Chai</li>
+                          <Badge>Jest</Badge>{' '}
+                          <Badge>Cypress</Badge>{' '}
+                          <Badge>Mocha/Chai</Badge>{' '}
                         </ul>
 
                       </Col>
