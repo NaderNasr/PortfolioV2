@@ -17,8 +17,7 @@ const ProjectItem = ({ _ }) => {
         <Card
           bg='dark'
           text='white'
-          style={{ width: '20rem', height: '20rem' }}
-          className="mb-2"
+          className="mb-2 project-card"
         >
           <Card.Body>
             <Card.Title>{_.title}</Card.Title>
