@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,700&display=swap');
 
-
-
 .contact-container {
   background-color: #0a192f;
   width: 100vw;
@@ -11,9 +9,9 @@
   overflow-x: hidden !important;
 }
 
-.contact-image{
+.contact-image {
   position: relative;
-  right:300px;
+  right: 300px;
 }
 
 .contact-text-container {
@@ -21,7 +19,7 @@
 }
 
 .contact-text-header {
-  color: #FC9E4F;
+  color: #fc9e4f;
   font-family: Roboto Mono;
   font-size: 40px;
 }
@@ -48,4 +46,53 @@
 
 .contact-button:hover {
   color: #e200ff;
+}
+
+@media (max-width: 767px) {
+  .contact-container {
+    background-color: #0a192f;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+  }
+
+  .contact-image {
+    position: relative;
+    right: 300px;
+  }
+
+  .contact-text-container {
+    padding: 1em;
+  }
+
+  .contact-text-header {
+    color: #fc9e4f;
+    font-family: Roboto Mono;
+    font-size: 40px;
+  }
+
+  .contact-button {
+    text-decoration: none;
+    border: 1px;
+    border-style: solid;
+    border-color: #e200ff;
+    padding: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-left: 2em;
+    text-decoration: none;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    font-family: Roboto Mono;
+  }
+
+  .contact-button > a {
+    text-decoration: none;
+    color: #5edbf2;
+  }
+
+  .contact-button:hover {
+    color: #e200ff;
+  }
 }
