@@ -3,8 +3,11 @@ import React from 'react';
 import './styles.css';
 import { motion } from 'framer-motion';
 import Circle from '../../assets/CircleHero.svg'
+import isMobile from 'is-mobile';
 
 const Hero = () => {
+
+
   return (
     <>
 
@@ -25,9 +28,16 @@ const Hero = () => {
               I’m a software engineer specializing in building
               and designing exceptional digital experiences.
             </p>
+            {isMobile() ?
+
+              <></>
+              :
+              <p className='text-pronunciation'>TL:DR {'>>'} open console</p>
+
+            }
           </motion.div>
         </div>
-        <img src={Circle} className='hero-circle'/>
+        <img src={Circle} className='hero-circle' alt='hero-circle'/>
       </div>
     </>
   )
