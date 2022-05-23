@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <>
       <Navbar className='backgroundColor'>
+
         <Container>
           <Navbar.Brand href="#home">
             <img className='logo' src={Logo} alt='home' />
@@ -15,7 +16,7 @@ const Header = () => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <div className='navLink'>
-              <Nav.Link>
+              {/* <Nav.Link>
                 <p className='header-text-color'>About</p>
               </Nav.Link>
               <Nav.Link>
@@ -23,7 +24,7 @@ const Header = () => {
               </Nav.Link>
               <Nav.Link>
                 <p className='header-text-color'>Contact</p>
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 href={resume}
                 target="_blank"
@@ -36,6 +37,7 @@ const Header = () => {
             </div>
           </Navbar.Collapse>
         </Container>
+
       </Navbar>
     </>
   )
