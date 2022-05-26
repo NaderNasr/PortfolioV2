@@ -2,17 +2,21 @@
   background-color: #0a192f;
   width: 100vw;
   height: 100%;
+  z-index: 999px;
 }
 
 .projects-text-container {
   padding: 10em;
-  
+  z-index: 999px;
+
 }
 
 .projects-text-header {
   color: #fc9e4f;
   font-family: Roboto Mono;
   font-size: 40px;
+  z-index: 999px;
+
 }
 
 .project-button {
@@ -24,6 +28,111 @@
   width: 50;
   height: 20rem;
   margin: 0em;
+}
+
+#circle-large {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+}
+
+#project-circle-small {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+  background-color: #0a192f;
+
+}
+
+#project-circle-small2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+  background-color: #0a192f;
+
+}
+
+#project-circle-small3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+  background-color: #0a192f;
+}
+
+.project-floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 1px solid #c104fa;
+  color: white;
+  z-index: -999px;
+
+}
+
+.project-floating2 {
+  animation-name: floating;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 1px solid #c104fa;
+  color: white;
+  z-index: -999px;
+
+}
+
+.project-floating3 {
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 1px solid #c104fa;
+  color: white;
+  z-index: -999px;
+
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 55px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.card-image{
+  display: block;
+  width: 100%;
+  height: 0.3vh;
+  object-fit: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.card-image-bottom{
+  transform: rotateX(180deg);
+  display: block;
+  width: 100%;
+  height: 0.5vh;
+  object-fit: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.card-bg{
+  background-color: #2a5ca7;
 }
 
 @media (max-width: 767px) {
