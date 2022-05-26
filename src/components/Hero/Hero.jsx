@@ -16,13 +16,17 @@ const Hero = () => {
           <p className='text'>Hi, my name is,</p>
           <motion.div
             initial={{ opacity: 0, x: -300 }}
-            transition={{ ease: "easeOut", duration: 1.2 }}
+            transition={{ ease: "easeOut", duration: 0.8 }}
             animate={{ x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             style={{ overflowX: 'hidden' }}
           >
+
+
             <p className='text-name'>Nader Nasr.</p>
-            {/* <p className='text-pronunciation'>Nah-d-ur Nah-sr</p> */}
+            <p className='text-pronunciation'>Nah-der Nah-sr</p>
+
+
             <p className='text-desc'>I build things for the web.</p>
             <p className='text-summary'>
               I’m a software engineer specializing in building
@@ -36,8 +40,12 @@ const Hero = () => {
 
             }
           </motion.div>
+
+
+
+
         </div>
-        <img src={Circle} className='hero-circle' alt='hero-circle'/>
+        <img src={Circle} className='hero-circle' alt='hero-circle' />
       </div>
     </>
   )
