@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import LoadingBar from 'react-top-loading-bar';
+import React from 'react'
 import './styles.css'
 
 const Loading = () => {
