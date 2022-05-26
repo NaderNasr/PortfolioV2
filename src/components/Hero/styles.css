@@ -8,6 +8,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
+  z-index: 99;
 }
 
 .text-container {
@@ -26,12 +27,15 @@
   font-size: 12px;
 }
 
+
+
 .text-name {
   color: white;
   font-family: Poppins;
   font-size: 110px;
   font-weight: 900;
 }
+
 
 .text-desc {
   color: white;
@@ -45,23 +49,6 @@
   font-family: Poppins;
   font-size: 35px;
   margin-top: 1em;
-}
-
-.circle_svg {
-  position: absolute;
-  z-index: 999;
-}
-
-.hero-circle {
-  position: relative;
-  bottom: 400px;
-  width: 1000px;
-  right: 700px;
-  overflow-y: inherit;
-}
-
-.hero-icons {
-  color: white;
 }
 
 @media (max-width: 767px) {
