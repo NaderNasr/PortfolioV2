@@ -23,7 +23,7 @@ const About = () => {
                   <div>
                     <p className='about-text-desc'>
                       Hello! My name is Nader and I enjoy creating things
-                      that live on the internet. As a technical project manager, my interest in web development started back in 2017 whilst overlooking developers work, I began playing with JavaScript, html and css in my free time.
+                      that live on the internet. In my previous role as a technical project manager, my interest in web development started back in 2017 whilst overlooking developers work, I began playing with JavaScript, html and css in my free time.
                     </p>
                     <br />
                     <p className='about-text-desc'>
@@ -65,6 +65,22 @@ const About = () => {
                           <Badge>Jest</Badge>{' '}
                           <Badge>Cypress</Badge>{' '}
                           <Badge>Mocha/Chai</Badge>{' '}
+
+                        </ul>
+
+                      </Col>
+                      <Col>
+                        <p className='about-list-title'>DESIGN:</p>
+                        <ul className='about-list'>
+                          <Badge>Figma</Badge>{' '}
+                          <Badge>StoryBook</Badge>{' '}
+                          <Badge>AdobeXD / Adobe Suit</Badge>{' '}
+                        </ul>
+
+                        <p className='about-list-title'>TEAM WORK:</p>
+                        <ul className='about-list'>
+                          <Badge>Jira</Badge>{' '}
+                          <Badge>Trello</Badge>{' '}
                         </ul>
 
                       </Col>
