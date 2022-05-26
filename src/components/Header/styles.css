@@ -4,7 +4,7 @@
   background-color: #0a192f;
   position: sticky !important;
   top: 0px;
-  z-index: 99;
+  z-index: 999999;
 }
 
 .navLink {
@@ -19,8 +19,12 @@
   font-family: Roboto Mono;
 }
 
+.header-text-color:hover {
+  color: #e200ff;
+}
+
 .logo {
-  width: 25px;
+  width: 35px;
 }
 
 .resume {
@@ -36,6 +40,11 @@
   margin-top: 0.5em;
   font-size: 0.8em;
   font-family: Roboto Mono;
+}
+
+.resume:hover {
+  border-color: #5edbf2;
+  color: #e200ff;
 }
 
 @media (max-width: 767px) {
