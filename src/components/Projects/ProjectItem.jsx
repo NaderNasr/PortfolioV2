@@ -19,6 +19,8 @@ const ProjectItem = ({ _ }) => {
           text='white'
           className="mb-2 project-card"
         >
+        <img src={_.image} className='card-image' alt={_.title}/>
+
           <Card.Body>
             <Card.Title>{_.title}</Card.Title>
             <Card.Text>
@@ -39,14 +41,16 @@ const ProjectItem = ({ _ }) => {
           <Card.Footer>
             <div className='project-button'>
               {_.site ?
-                <Button href={_.site} variant="light">Site</Button>
+                <Button href={_.site} variant="light">Live</Button>
                 :
-                <Button href={_.video} variant="light">Video</Button>
+                <Button href={_.video} variant="light">Demo</Button>
               }
               <Button href={_.link} variant="warning">Github</Button>
             </div>
             <br />
           </Card.Footer>
+          <img src={_.image} className='card-image-bottom' alt={_.title} />
+
         </Card>
         <br />
       </motion.div>
