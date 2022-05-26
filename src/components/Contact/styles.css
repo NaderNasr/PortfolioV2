@@ -22,6 +22,9 @@
   color: #fc9e4f;
   font-family: Roboto Mono;
   font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-button {
@@ -37,6 +40,9 @@
   margin-top: 0.5em;
   font-size: 0.8em;
   font-family: Roboto Mono;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-button > a {
@@ -44,8 +50,78 @@
   color: #5edbf2;
 }
 
-.contact-button:hover {
+
+
+#contact-circle-small {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+  background-color: #0a192f;
+
+}
+
+#contact-circle-small2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+  background-color: #0a192f;
+
+}
+
+#contact-circle-small3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+  background-color: #0a192f;
+}
+
+.contact-floating {
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 2px solid #fc9e4f;
+
+}
+
+.contact-floating2 {
+  animation-name: floating;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 2px solid #fc9e4f;
+
+}
+
+.contact-floating3 {
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 2px solid #fc9e4f;
+
+}
+.contact-button:hover, .contact-floating:hover, .contact-floating2:hover, .contact-floating3:hover {
+  border: 3px solid #5edbf2;
   color: #e200ff;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 55px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -80,11 +156,14 @@
     padding: 0.5em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    margin-left: 2em;
     text-decoration: none;
     margin-top: 0.5em;
     font-size: 0.8em;
     font-family: Roboto Mono;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
   }
 
   .contact-button > a {
