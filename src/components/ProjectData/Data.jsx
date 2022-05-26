@@ -23,17 +23,17 @@ const Data = [
     link: 'https://github.com/NaderNasr/PasswordKeepR',
     video: 'https://youtu.be/xp5xNIXyyqs'
   },
-  {
-    id: 1,
-    number: '06',
-    title: 'Tweeter',
-    text: `A single page twitter clone application.`,
-    badge: ['HTML', 'CSS', 'Javascript', 'jQuery', 'AJAX', 'NodeJS', 'Express'],
-    image: `https://images.unsplash.com/photo-1540643587686-bc6cbdecf5e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80`,
-    GitHub: 'GitHub',
-    link: 'https://github.com/NaderNasr/Tweeter',
-    video: 'https://youtu.be/Pyh8Yygbgy0'
-  },
+  // {
+  //   id: 1,
+  //   number: '06',
+  //   title: 'Tweeter',
+  //   text: `A single page twitter clone application.`,
+  //   badge: ['HTML', 'CSS', 'Javascript', 'jQuery', 'AJAX', 'NodeJS', 'Express'],
+  //   image: `https://images.unsplash.com/photo-1540643587686-bc6cbdecf5e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80`,
+  //   GitHub: 'GitHub',
+  //   link: 'https://github.com/NaderNasr/Tweeter',
+  //   video: 'https://youtu.be/Pyh8Yygbgy0'
+  // },
   {
     id: 2,
     number: '05',
