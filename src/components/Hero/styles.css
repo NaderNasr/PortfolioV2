@@ -105,9 +105,9 @@
   .hero-circle {
     position: relative;
     bottom: 400px;
-    width: 1000px;
-    right: 700px;
+    width: 900px;
     overflow-y: inherit;
+    z-index: -1;
   }
 
   .hero-icons {
