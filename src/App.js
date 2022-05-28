@@ -12,7 +12,7 @@ const App = () => {
   const TRACKING_ID = 'UA-163447962-1';
   ReactGA.initialize(TRACKING_ID);
 
-  const [loading, setLoading] = useState(1000);
+  const [loading, setLoading] = useState(993500);
 
   useEffect(() => {
     setTimeout(() => {

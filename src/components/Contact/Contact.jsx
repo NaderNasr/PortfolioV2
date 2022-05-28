@@ -81,7 +81,7 @@ const Contact = () => {
             </Parallax>
           </ParallaxProvider>
         )}
-        <img src={Img} alt="circleImages" className="contact-image" />
+        {/* <img src={Img} alt="circleImages" className="contact-image" /> */}
       </div>
     </div>
   );
