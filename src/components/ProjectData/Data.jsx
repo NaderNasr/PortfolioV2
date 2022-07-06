@@ -37,13 +37,13 @@ const Data = [
   {
     id: 2,
     number: '05',
-    title: 'TinyApp',
-    text: `A URL shortening service and a link management platform.`,
-    badge: ['Node', 'Express', 'EJS', 'Bcrypt'],
+    title: 'CryptoBuzz',
+    text: `A Crypto New Application.`,
+    badge: ['Node', 'Axios', 'Ant Design', 'Redux Tool Kit (RTK)', 'Chart.js', 'Millify'],
     image: 'https://images.unsplash.com/photo-1602345397613-0934a8812d23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=984&q=80',
     GitHub: 'GitHub',
-    link: 'https://github.com/NaderNasr/tinyApp',
-    video: 'https://youtu.be/5h9vGvBZAbA'
+    link: 'https://github.com/NaderNasr/cryptoverse-',
+    site: 'https://cryptobuzz-nader.netlify.app'
   },
   {
     id: 3,
