@@ -29,7 +29,7 @@ const Hero = () => {
 
             <p className='text-desc'>I build things for the web.</p>
             <p className='text-summary'>
-              I’m a software engineer specializing in building
+              I’m a web developer specializing in building
               and designing exceptional digital experiences.
             </p>
             {isMobile() ?

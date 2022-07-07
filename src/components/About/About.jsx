@@ -27,7 +27,7 @@ const About = () => {
                     </p>
                     <br />
                     <p className='about-text-desc'>
-                      Below are the technologies I am currently working with (and growings!):
+                      Below are the technologies I am currently working with:
                     </p>
                   </div>
                   <br />
