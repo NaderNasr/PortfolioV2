@@ -88,6 +88,17 @@ const Data = [
     GitHub: 'Github',
     link: 'https://github.com/NaderNasr/Svelte-Movie-DB',
     site: 'https://svelteflix.netlify.app/'
+  },
+  {
+    id: 8,
+    number: '00',
+    title: 'QR Gen',
+    text: 'A QR Code Generator',
+    badge: ['HTML', 'Tailwind', 'Javascript', 'QR Code JS'],
+    image: 'https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    GitHub: 'Github',
+    link: 'https://github.com/NaderNasr/Vanilla-JS---QRcode-Generator',
+    site: 'https://qr-gen-nader.netlify.app'
   }
 ]
 
