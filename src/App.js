@@ -11,23 +11,12 @@ import Loading from './components/Loading/Loading';
 
 
 const App = () => {
-  const [loading, setLoading] = useState(3500);
   const TRACKING_ID = "UA-163447962-1";
   ReactGA.initialize(TRACKING_ID);
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    setTimeout(() => {
-      setLoading(0);
-    }, loading);
-  }, [loading]);
-
-
+  ReactGA.pageview(window.location.pathname + window.location.search);
 
   return (
     <>
-      {loading ? (
-        <Loading />
-      ) : (
         <>
           <Header />
           <Hero />
@@ -36,7 +25,6 @@ const App = () => {
           <Experience />
           <Contact />
         </>
-      )}
     </>
   );
 };
