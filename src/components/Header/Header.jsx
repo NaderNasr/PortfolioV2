@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import Logo from '../../assets/Logo.svg'
 import './styles.css'
-import resume from '../../assets/Nader Nasr - Resume .pdf'
+import resume from '../../assets/Nader Nasr - Resume.pdf'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
