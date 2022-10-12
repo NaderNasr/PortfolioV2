@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -6,12 +5,11 @@ import Experience from './components/Experience/Experience';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Project from './components/Projects/ProjectGrid/Project';
-import Loading from './components/Loading/Loading';
 
 
 
 const App = () => {
-  const TRACKING_ID = "UA-163447962-1";
+  const TRACKING_ID = process.env.REACT_APP_UA;
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
 
