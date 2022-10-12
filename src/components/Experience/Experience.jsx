@@ -12,6 +12,8 @@ const Experience = () => {
   const [readMore, setReadMore] = useState(false);
   const [readMore2, setReadMore2] = useState(false);
   const [readMore3, setReadMore3] = useState(false);
+  const [readMore4, setReadMore4] = useState(false);
+
 
 
 
@@ -27,11 +29,15 @@ const Experience = () => {
     setReadMore3(!readMore3)
   }
 
+  const toggleReadMore4 = () => {
+    setReadMore4(!readMore4)
+  }
+
   return (
     <div className='experience-container'>
       <div className='experience-text-container'>
         <p className='experience-text-header'>Experience<hr /></p>
-        {isMobile() ? <></> :
+        {isMobile() &&
           <ParallaxProvider>
 
             <Parallax speed={50}>
@@ -60,6 +66,59 @@ const Experience = () => {
 
           </ParallaxProvider>
         }
+        <motion.div
+          initial={{ opacity: 0, x: 300 }}
+          transition={{ ease: "easeOut", duration: 1.2 }}
+          animate={{ x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+        >
+          <Card
+            bg='dark'
+            text='white'
+            style={{ width: '100%' }}
+            className="mb-2 experience-card"
+
+          >
+            <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <p>New Idea Machine - Toronto, Ontario (Remote)</p>
+              <p>Sept 2022 - Current</p>
+            </Card.Header>
+            <Card.Body>
+              <Card.Title>Full Stack Web Developer</Card.Title>
+              {readMore4 ?
+                <>
+                  <Card.Text>
+                    <ul>
+                      <li>Add new features to applications.</li>
+                      <li>Collaborating with 10+ developers, designers, and project managers to create a project management website.</li>
+                      <li>Participating in weekly scrum meetings to ensure project is progressing and barriers are noted and resolved.</li>
+                      <li>Schedule stand-up meetings with team members to review progress, clarify issues and resolve roadblocks.</li>
+                      <li>Clean up previous code from ES5 to ES6, change function props to deconstructed props and resolve bugs and console errors.</li>
+                      <li>Add more information to the documentation for current and future developers.</li>
+                    </ul>
+                    {/* <ul>
+                      <br />
+                      <p>Key Achievements:</p>
+                      <li>Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
+                    </ul> */}
+                  </Card.Text>
+                  <span onClick={toggleReadMore4} style={{ color: '#E200FF', cursor:'pointer' }}>Read Less</span>
+                </>
+                :
+                <>
+                  <span onClick={toggleReadMore4} style={{ color: 'orange', cursor:'pointer' }}>Read More</span>
+                </>
+              }
+            </Card.Body>
+            <Card.Footer>
+              {' '} <Badge bg="primary">React</Badge> {' '}
+              {' '} <Badge bg="primary">Firebase</Badge> {' '}
+              {' '} <Badge bg="primary">NodeJs</Badge> {' '}
+              {' '} <Badge bg="primary">Axios</Badge> {' '}
+              {' '} <Badge bg="primary">Postman</Badge> {' '}
+            </Card.Footer>
+          </Card>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 300 }}
           transition={{ ease: "easeOut", duration: 1.2 }}
