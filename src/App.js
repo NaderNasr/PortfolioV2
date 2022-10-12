@@ -9,7 +9,7 @@ import Project from './components/Projects/ProjectGrid/Project';
 
 
 const App = () => {
-  const TRACKING_ID = process.env.REACT_APP_UA;
+  const TRACKING_ID = 'UA-163447962-1';
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
 
