@@ -75,16 +75,15 @@ const Experience = () => {
           <Card
             bg='dark'
             text='white'
-            style={{ width: '100%' }}
+            style={{ width: '100%'}}
             className="mb-2 experience-card"
-
           >
             <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
               <p>New Idea Machine - Toronto, Ontario (Remote)</p>
               <p>Sept 2022 - Current</p>
             </Card.Header>
             <Card.Body>
-              <Card.Title>Full Stack Web Developer</Card.Title>
+              <Card.Title>Front-End Web Developer</Card.Title>
               {readMore4 ?
                 <>
                   <Card.Text>
@@ -137,7 +136,7 @@ const Experience = () => {
               <p>Jan 2019 - Dec 2019</p>
             </Card.Header>
             <Card.Body>
-              <Card.Title>Junior Front-End Developer</Card.Title>
+              <Card.Title>Front-End Web Developer</Card.Title>
               {readMore ?
                 <>
                   <Card.Text>

@@ -8,7 +8,6 @@
 .projects-text-container {
   padding: 10em;
   z-index: 999px;
-
 }
 
 .projects-text-header {
@@ -16,7 +15,6 @@
   font-family: Roboto Mono;
   font-size: 40px;
   z-index: 999px;
-
 }
 
 .project-button {
@@ -24,7 +22,7 @@
   justify-content: space-between;
 }
 
-.project-card{
+.project-card {
   width: 50;
   height: 20rem;
   margin: 0em;
@@ -45,7 +43,6 @@
   position: absolute;
   z-index: -999px;
   background-color: #0a192f;
-
 }
 
 #project-circle-small2 {
@@ -55,7 +52,6 @@
   position: absolute;
   z-index: -999px;
   background-color: #0a192f;
-
 }
 
 #project-circle-small3 {
@@ -75,7 +71,6 @@
   border: 1px solid #c104fa;
   color: white;
   z-index: -999px;
-
 }
 
 .project-floating2 {
@@ -86,7 +81,6 @@
   border: 1px solid #c104fa;
   color: white;
   z-index: -999px;
-
 }
 
 .project-floating3 {
@@ -97,7 +91,6 @@
   border: 1px solid #c104fa;
   color: white;
   z-index: -999px;
-
 }
 
 @keyframes floating {
@@ -112,7 +105,7 @@
   }
 }
 
-.card-image{
+.card-image {
   display: block;
   width: 100%;
   height: 0.3vh;
@@ -121,7 +114,7 @@
   -webkit-filter: blur(2px);
 }
 
-.card-image-bottom{
+.card-image-bottom {
   transform: rotateX(180deg);
   display: block;
   width: 100%;
@@ -131,7 +124,7 @@
   -webkit-filter: blur(2px);
 }
 
-.card-bg{
+.card-bg {
   background-color: #2a5ca7;
 }
 
@@ -156,9 +149,10 @@
     display: flex;
     justify-content: space-between;
   }
-  .project-card{
+  .project-card {
     margin: auto;
     width: 20rem;
-    height: 20rem
+    height: 20rem;
+    
   }
 }

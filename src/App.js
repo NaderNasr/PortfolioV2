@@ -15,14 +15,14 @@ const App = () => {
 
   return (
     <>
-        <>
+        <div style={{backgroundColor:'#0B192E'}}>
           <Header />
           <Hero />
           <About />
           <Project />
           <Experience />
           <Contact />
-        </>
+        </div>
     </>
   );
 };

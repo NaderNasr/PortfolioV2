@@ -19,7 +19,7 @@ const ProjectItem = ({ _ }) => {
           text='white'
           className="mb-2 project-card"
         >
-        <img src={_.image} className='card-image' alt={_.title}/>
+        {/* <img src={_.image} className='card-image' alt={_.title}/> */}
 
           <Card.Body>
             <Card.Title>{_.title}</Card.Title>
