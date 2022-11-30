@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero';
 import Project from './components/Projects/ProjectGrid/Project';
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
+import './App.css'
 
 
 
@@ -17,9 +18,9 @@ const App = () => {
 
   return (
     <>
-      <div style={{ backgroundColor: '#0B192E', cursor:'none' }}>
+      <div style={{ backgroundColor: '#0B192E'}}>
         <CustomCursor
-          targets={['.link', '.your-css-selector']}
+          targets={['Button']}
           customClass='custom-cursor'
           dimensions={30}
           fill='#FF6900'
