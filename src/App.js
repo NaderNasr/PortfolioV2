@@ -5,6 +5,8 @@ import Experience from './components/Experience/Experience';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Project from './components/Projects/ProjectGrid/Project';
+import CustomCursor from 'custom-cursor-react';
+import 'custom-cursor-react/dist/index.css';
 
 
 
@@ -15,14 +17,26 @@ const App = () => {
 
   return (
     <>
-        <div style={{backgroundColor:'#0B192E'}}>
-          <Header />
-          <Hero />
-          <About />
-          <Project />
-          <Experience />
-          <Contact />
-        </div>
+      <div style={{ backgroundColor: '#0B192E', cursor:'none' }}>
+        <CustomCursor
+          targets={['.link', '.your-css-selector']}
+          customClass='custom-cursor'
+          dimensions={30}
+          fill='#FF6900'
+          smoothness={{
+            movement: 0.2,
+            scale: 0.2,
+            opacity: 1,
+          }}
+          targetOpacity={1}
+        />
+        <Header />
+        <Hero />
+        <About />
+        <Project />
+        <Experience />
+        <Contact />
+      </div>
     </>
   );
 };
