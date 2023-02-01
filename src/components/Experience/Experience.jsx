@@ -13,6 +13,8 @@ const Experience = () => {
   const [readMore2, setReadMore2] = useState(false);
   const [readMore3, setReadMore3] = useState(false);
   const [readMore4, setReadMore4] = useState(false);
+  const [readMore5, setReadMore5] = useState(false);
+
 
 
 
@@ -31,6 +33,9 @@ const Experience = () => {
 
   const toggleReadMore4 = () => {
     setReadMore4(!readMore4)
+  }
+  const toggleReadMore5 = () => {
+    setReadMore5(!readMore5)
   }
 
   return (
@@ -66,58 +71,114 @@ const Experience = () => {
 
           </ParallaxProvider>
         }
-        <motion.div
-          initial={{ opacity: 0, x: 300 }}
-          transition={{ ease: "easeOut", duration: 1.2 }}
-          animate={{ x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-        >
-          <Card
-            bg='dark'
-            text='white'
-            style={{ width: '100%'}}
-            className="mb-2 experience-card"
+        <div style={{ marginBottom: '40px' }}>
+          <motion.div
+            initial={{ opacity: 0, x: 300 }}
+            transition={{ ease: "easeOut", duration: 1.2 }}
+            animate={{ x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
           >
-            <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <p>New Idea Machine - Toronto, Ontario (Remote)</p>
-              <p>Sept 2022 - Current</p>
-            </Card.Header>
-            <Card.Body>
-              <Card.Title>Front-End Web Developer</Card.Title>
-              {readMore4 ?
-                <>
-                  <Card.Text>
-                    <ul>
-                      <li>Add new features to applications.</li>
-                      <li>Collaborating with 10+ developers, designers, and project managers to create a project management website.</li>
-                      <li>Participating in weekly scrum meetings to ensure project is progressing and barriers are noted and resolved.</li>
-                      <li>Schedule stand-up meetings with team members to review progress, clarify issues and resolve roadblocks.</li>
-                      <li>Clean up previous code from ES5 to ES6, change function props to deconstructed props and resolve bugs and console errors.</li>
-                      <li>Add more information to the documentation for current and future developers.</li>
-                    </ul>
-                    {/* <ul>
+            <Card
+              bg='dark'
+              text='white'
+              style={{ width: '100%' }}
+              className="mb-2 experience-card"
+            >
+              <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <p>Memory Jar - Toronto, Ontario</p>
+                <p>Dec 2022 - Current</p>
+              </Card.Header>
+              <Card.Body>
+                <Card.Title>Product Development - Front-End Developer</Card.Title>
+                {readMore4 ?
+                  <>
+                    <Card.Text>
+                      <ul>
+                        <li>Add new features to applications.</li>
+                        <li>Collaborate closely and translate the founders' ideas into functional components in React Native.</li>
+                        <li>Converting Figma UX/UI designs into mobile app components (iOS/Android)</li>
+                        <li>Weekly meetings with founders and developers.</li>
+                        <li>Connecting Node.js back-end API endpoints.</li>
+                        <li>Documentation</li>
+                      </ul>
+                    </Card.Text>
+                    <span onClick={toggleReadMore5} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                  </>
+                  :
+                  <>
+                    <span onClick={toggleReadMore5} style={{ color: 'orange', cursor: 'pointer' }}>Read More</span>
+                  </>
+                }
+              </Card.Body>
+              <Card.Footer>
+                {' '} <Badge bg="primary">React Native</Badge> {' '}
+                {' '} <Badge bg="primary">NodeJs</Badge> {' '}
+                {' '} <Badge bg="primary">React</Badge> {' '}
+                {' '} <Badge bg="primary">AWS</Badge> {' '}
+                {' '} <Badge bg="primary">Axios</Badge> {' '}
+                {' '} <Badge bg="primary">Postman</Badge> {' '}
+                {' '} <Badge bg="primary">MongoDB</Badge> {' '}
+                {' '} <Badge bg="primary">Figma</Badge> {' '}
+                {' '} <Badge bg="primary">Jira</Badge> {' '}
+                {' '} <Badge bg="primary">BitBucket</Badge> {' '}
+              </Card.Footer>
+            </Card>
+          </motion.div>
+        </div>
+        <div style={{ marginBottom: '40px' }}>
+          <motion.div
+            initial={{ opacity: 0, x: 300 }}
+            transition={{ ease: "easeOut", duration: 1.2 }}
+            animate={{ x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
+            <Card
+              bg='dark'
+              text='white'
+              style={{ width: '100%' }}
+              className="mb-2 experience-card"
+            >
+              <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <p>New Idea Machine - Calgary, Alberta</p>
+                <p>Sept 2022 - Dec 2022</p>
+              </Card.Header>
+              <Card.Body>
+                <Card.Title>Front-End Web Developer</Card.Title>
+                {readMore4 ?
+                  <>
+                    <Card.Text>
+                      <ul>
+                        <li>Add new features to applications.</li>
+                        <li>Collaborating with 10+ developers, designers, and project managers to create a project management website.</li>
+                        <li>Participating in weekly scrum meetings to ensure project is progressing and barriers are noted and resolved.</li>
+                        <li>Schedule stand-up meetings with team members to review progress, clarify issues and resolve roadblocks.</li>
+                        <li>Clean up previous code from ES5 to ES6, change function props to deconstructed props and resolve bugs and console errors.</li>
+                        <li>Add more information to the documentation for current and future developers.</li>
+                      </ul>
+                      {/* <ul>
                       <br />
                       <p>Key Achievements:</p>
                       <li>Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
                     </ul> */}
-                  </Card.Text>
-                  <span onClick={toggleReadMore4} style={{ color: '#E200FF', cursor:'pointer' }}>Read Less</span>
-                </>
-                :
-                <>
-                  <span onClick={toggleReadMore4} style={{ color: 'orange', cursor:'pointer' }}>Read More</span>
-                </>
-              }
-            </Card.Body>
-            <Card.Footer>
-              {' '} <Badge bg="primary">React</Badge> {' '}
-              {' '} <Badge bg="primary">Firebase</Badge> {' '}
-              {' '} <Badge bg="primary">NodeJs</Badge> {' '}
-              {' '} <Badge bg="primary">Axios</Badge> {' '}
-              {' '} <Badge bg="primary">Postman</Badge> {' '}
-            </Card.Footer>
-          </Card>
-        </motion.div>
+                    </Card.Text>
+                    <span onClick={toggleReadMore4} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                  </>
+                  :
+                  <>
+                    <span onClick={toggleReadMore4} style={{ color: 'orange', cursor: 'pointer' }}>Read More</span>
+                  </>
+                }
+              </Card.Body>
+              <Card.Footer>
+                {' '} <Badge bg="primary">React</Badge> {' '}
+                {' '} <Badge bg="primary">Firebase</Badge> {' '}
+                {' '} <Badge bg="primary">NodeJs</Badge> {' '}
+                {' '} <Badge bg="primary">Axios</Badge> {' '}
+                {' '} <Badge bg="primary">Postman</Badge> {' '}
+              </Card.Footer>
+            </Card>
+          </motion.div>
+        </div>
         <motion.div
           initial={{ opacity: 0, x: 300 }}
           transition={{ ease: "easeOut", duration: 1.2 }}
@@ -148,11 +209,11 @@ const Experience = () => {
                       <li>Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
                     </ul>
                   </Card.Text>
-                  <span onClick={toggleReadMore} style={{ color: '#E200FF', cursor:'pointer' }}>Read Less</span>
+                  <span onClick={toggleReadMore} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
                 </>
                 :
                 <>
-                  <span onClick={toggleReadMore} style={{ color: 'orange', cursor:'pointer' }}>Read More</span>
+                  <span onClick={toggleReadMore} style={{ color: 'orange', cursor: 'pointer' }}>Read More</span>
                 </>
               }
             </Card.Body>
@@ -198,11 +259,11 @@ const Experience = () => {
                         performance and helped grow downloads from 50,000 in the first year to over 500,000 in the second year by optimizing the functionality</li>
                     </ul>
                   </Card.Text>
-                  <span onClick={toggleReadMore2} style={{ color: '#E200FF', cursor:'pointer' }}>Read Less</span>
+                  <span onClick={toggleReadMore2} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
                 </>
                 :
                 <>
-                  <span onClick={toggleReadMore2} style={{ color: 'orange', cursor:'pointer' }}>Read More</span>
+                  <span onClick={toggleReadMore2} style={{ color: 'orange', cursor: 'pointer' }}>Read More</span>
                 </>
               }
             </Card.Body>
@@ -247,11 +308,11 @@ const Experience = () => {
                     </ul>
 
                   </Card.Text>
-                  <span onClick={toggleReadMore3} style={{ color: '#E200FF', cursor:'pointer' }}>Read Less</span>
+                  <span onClick={toggleReadMore3} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
                 </>
                 :
                 <>
-                  <span onClick={toggleReadMore3} style={{ color: 'orange', cursor:'pointer' }}>Read More</span>
+                  <span onClick={toggleReadMore3} style={{ color: 'orange', cursor: 'pointer' }}>Read More</span>
                 </>
               }
             </Card.Body>
