@@ -22,8 +22,7 @@ const About = () => {
                 >
                   <div>
                     <p className='about-text-desc'>
-                      Hello! My name is Nader and I enjoy creating things
-                      that live on the internet. In my previous role as a technical project manager, my interest in web development started back in 2017 whilst overlooking developers work, I began playing with JavaScript, html and css in my free time.
+                    Hey there, fellow internet enthusiasts! My name is Nader, and I'm addicted to creating awesome digital experiences. Back in 2017, while working as a technical project manager, I stumbled upon the world of web development and fell head over heels in love with it. I couldn't resist tinkering around with JavaScript, HTML, and CSS in my free time, and the rest is history! I'm absolutely stoked to keep honing my skills and ride the wave of innovation in this dynamic field. Let's create some seriously rad stuff together, shall we?
                     </p>
                     <br />
                     <p className='about-text-desc'>
