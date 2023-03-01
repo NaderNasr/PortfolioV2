@@ -1,0 +1,51 @@
+.center {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: center; for centering 3 blocks in the center */
+  /* justify-content: space-evenly; */
+}
+
+.blob_1 {
+  /* position: absolute; */
+  width: 1000px;
+  height: 500px;
+  border-radius: 100%;
+  background: #00ffe0;
+  top: 50%;
+  filter: blur(120px);
+  opacity: 20%;
+}
+
+.blob_2 {
+  width: 2000px;
+  height: 500px;
+  border-radius: 100%;
+
+  background: #0500ff;
+  filter: blur(120px);
+  opacity: 25%;
+}
+
+.blob_3 {
+  width: 4000px;
+  height: 700px;
+  opacity: 25%;
+  border-radius: 100%;
+
+  background: #ff0d6a;
+  filter: blur(120px);
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce-1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
+}

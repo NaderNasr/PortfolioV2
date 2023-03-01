@@ -90,7 +90,7 @@ const Experience = () => {
               </Card.Header>
               <Card.Body>
                 <Card.Title>Product Development - Front-End Developer</Card.Title>
-                {readMore4 ?
+                {readMore5 ?
                   <>
                     <Card.Text>
                       <ul>
@@ -155,11 +155,7 @@ const Experience = () => {
                         <li>Clean up previous code from ES5 to ES6, change function props to deconstructed props and resolve bugs and console errors.</li>
                         <li>Add more information to the documentation for current and future developers.</li>
                       </ul>
-                      {/* <ul>
-                      <br />
-                      <p>Key Achievements:</p>
-                      <li>Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
-                    </ul> */}
+
                     </Card.Text>
                     <span onClick={toggleReadMore4} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
                   </>

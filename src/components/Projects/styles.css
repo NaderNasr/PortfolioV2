@@ -68,9 +68,10 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  border: 1px solid #c104fa;
-  color: white;
+  border: 50px solid #0500ff;
   z-index: -999px;
+  filter: blur(15px);
+  opacity: 50%;
 }
 
 .project-floating2 {
@@ -78,9 +79,10 @@
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  border: 1px solid #c104fa;
-  color: white;
+  border: 80px solid #0500ff;
   z-index: -999px;
+  filter: blur(15px);
+  opacity: 50%;
 }
 
 .project-floating3 {
@@ -88,9 +90,10 @@
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  border: 1px solid #c104fa;
-  color: white;
+  border: 100px solid #0500ff;
   z-index: -999px;
+  filter: blur(15px);
+  opacity: 50%;
 }
 
 @keyframes floating {

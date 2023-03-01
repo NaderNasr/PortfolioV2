@@ -27,9 +27,9 @@ const App = () => {
           smoothness={{
             movement: 0.2,
             scale: 0.2,
-            opacity: 1,
+            opacity: 0.4,
           }}
-          targetOpacity={1}
+          targetOpacity={0.3}
         />
         <Header />
         <Hero />

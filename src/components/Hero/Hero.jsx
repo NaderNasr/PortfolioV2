@@ -2,7 +2,6 @@ import React from 'react';
 // import TextLoop from "react-text-loop";
 import './styles.css';
 import { motion } from 'framer-motion';
-import Circle from '../../assets/CircleHero.svg'
 import isMobile from 'is-mobile';
 
 const Hero = () => {
@@ -21,17 +20,15 @@ const Hero = () => {
             whileInView={{ opacity: 1, x: 0 }}
             style={{ overflowX: 'hidden' }}
           >
-
-
             <p className='text-name'>Nader Nasr.</p>
             <p className='text-pronunciation'>Nah-der Nah-sr</p>
-
 
             <p className='text-desc'>I build things for the web.</p>
             <p className='text-summary'>
               I’m a web developer specializing in building
               and designing exceptional digital experiences.
             </p>
+
             {isMobile() ?
 
               <></>
@@ -40,12 +37,8 @@ const Hero = () => {
 
             }
           </motion.div>
-
-
-
-
         </div>
-        <img src={Circle} className='hero-circle' alt='hero-circle' />
+        <div className='blob_2 hero-circle'></div>
       </div>
     </>
   )
