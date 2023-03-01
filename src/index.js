@@ -10,7 +10,7 @@ const me = {
   Location: "Toronto, Ontario",
   github: "https://github.com/NaderNasr",
   LinkedIn: "https://www.linkedin.com/in/nnasr/",
-  YearsOfExperience: 4,
+  YearsOfExperience: 5,
 };
 
 const skills =
