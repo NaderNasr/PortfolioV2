@@ -23,7 +23,7 @@ const App = () => {
           targets={['Button']}
           customClass='custom-cursor'
           dimensions={30}
-          fill='#FF6900'
+          fill='#0500ff'
           smoothness={{
             movement: 0.2,
             scale: 0.2,

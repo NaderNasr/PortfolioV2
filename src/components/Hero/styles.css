@@ -28,6 +28,30 @@
   font-size: 12px;
 }
 
+#hero-circle-small {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+}
+
+#hero-circle-small1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+}
+
+#hero-circle-small2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -999px;
+
+}
 
 
 .text-name {
@@ -50,6 +74,44 @@
   font-family: Poppins;
   font-size: 35px;
   margin-top: 1em;
+}
+
+.hero-float{
+
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border: 120px solid #ff7171;
+    z-index: -999px;
+    filter: blur(65px);
+    opacity: 100%;
+    width: 30px;
+}
+
+.hero-float2{
+
+  animation-name: floating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  border: 120px solid #4845f8;
+  z-index: -999px;
+  filter: blur(65px);
+  opacity: 100%;
+}
+
+.hero-float3{
+
+  animation-name: floating;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: 120px solid #702d2d;
+  z-index: -999px;
+  filter: blur(65px);
+  opacity: 100%;
+  width: 30px;
 }
 
 .blob_2 {

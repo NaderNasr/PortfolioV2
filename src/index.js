@@ -11,7 +11,6 @@ const me = {
   github: "https://github.com/NaderNasr",
   LinkedIn: "https://www.linkedin.com/in/nnasr/",
   YearsOfExperience: 4,
-  Resume: "https://resume.creddle.io/resume/3yknjwdt649"
 };
 
 const skills =
