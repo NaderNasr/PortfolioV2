@@ -12,13 +12,16 @@ import './App.css'
 
 
 const App = () => {
+
   const TRACKING_ID = 'UA-163447962-1';
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
 
+
+
   return (
     <>
-      <div style={{ backgroundColor: '#0B192E'}}>
+      <div style={{ backgroundColor: '#0B192E' }}>
         <CustomCursor
           targets={['Button']}
           customClass='custom-cursor'

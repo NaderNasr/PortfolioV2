@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
 
-
 /* //////////////////////////////////////////// */
 .hero-container {
   background-color: #0a192f;
@@ -10,6 +9,20 @@
   height: 100vh;
   position: relative;
   z-index: 99;
+}
+
+.video-modal {
+  background: rgba(255, 4, 4, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(26.5px);
+  -webkit-backdrop-filter: blur(26.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.video-bg{
+  background: rgba(255, 255, 255, 0);
+  
 }
 
 .text-container {
@@ -50,9 +63,7 @@
   border-radius: 50%;
   position: absolute;
   z-index: -999px;
-
 }
-
 
 .text-name {
   color: white;
@@ -60,7 +71,6 @@
   font-size: 110px;
   font-weight: 900;
 }
-
 
 .text-desc {
   color: white;
@@ -76,38 +86,49 @@
   margin-top: 1em;
 }
 
-.hero-float{
-
-    animation-name: floating;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    border: 120px solid #ff7171;
-    z-index: -999px;
-    filter: blur(65px);
-    opacity: 100%;
-    width: 30px;
+@keyframes hero-floating {
+  0% {
+    transform: translate(0, 0px);
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 105px);
+  }
+  100% {
+    transform: translate(10, -0px);
+    transform: rotate(360deg);
+  }
 }
 
-.hero-float2{
-
-  animation-name: floating;
-  animation-duration: 10s;
+.hero-float {
+  animation-name: hero-floating;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
-  border: 120px solid #4845f8;
+  animation-timing-function: ease-in-out;
+  border: 220px solid #ff7171;
   z-index: -999px;
   filter: blur(65px);
   opacity: 100%;
+  width: 30px;
 }
 
-.hero-float3{
+.hero-float2 {
+  animation-name: hero-floating;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  border: 120px solid #c42eff;
+  z-index: -999px;
+  filter: blur(95px);
+  opacity: 100%;
+}
 
-  animation-name: floating;
+.hero-float3 {
+  animation-name: hero-floating;
   animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  border: 120px solid #702d2d;
+  border: 220px solid #016698;
   z-index: -999px;
   filter: blur(65px);
   opacity: 100%;

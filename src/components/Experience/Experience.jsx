@@ -94,11 +94,11 @@ const Experience = () => {
                   <>
                     <Card.Text>
                       <ul>
-                        <li>Add new features to applications.</li>
                         <li>Collaborate closely and translate the founders' ideas into functional components in React Native.</li>
-                        <li>Converting Figma UX/UI designs into mobile app components (iOS/Android)</li>
-                        <li>Weekly meetings with founders and developers.</li>
-                        <li>Connecting Node.js back-end API endpoints.</li>
+                        <li>Converting Figma UX/UI designs into mobile app components (iOS/Android).</li>
+                        <li>Write efficient and maintainable code using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborate with back-end developers to connect API endpoints to the front end..</li>
+                        <li>Implement SEO best practices to improve website visibility and search engine ranking</li>
                         <li>Documentation</li>
                       </ul>
                     </Card.Text>
@@ -121,6 +121,7 @@ const Experience = () => {
                 {' '} <Badge bg="primary">Figma</Badge> {' '}
                 {' '} <Badge bg="primary">Jira</Badge> {' '}
                 {' '} <Badge bg="primary">BitBucket</Badge> {' '}
+                {' '} <Badge bg="primary">SEO</Badge> {' '}
               </Card.Footer>
             </Card>
           </motion.div>
@@ -148,12 +149,13 @@ const Experience = () => {
                   <>
                     <Card.Text>
                       <ul>
-                        <li>Add new features to applications.</li>
-                        <li>Collaborating with 10+ developers, designers, and project managers to create a project management website.</li>
-                        <li>Participating in weekly scrum meetings to ensure project is progressing and barriers are noted and resolved.</li>
-                        <li>Schedule stand-up meetings with team members to review progress, clarify issues and resolve roadblocks.</li>
-                        <li>Clean up previous code from ES5 to ES6, change function props to deconstructed props and resolve bugs and console errors.</li>
-                        <li>Add more information to the documentation for current and future developers.</li>
+                        <li>Stay up-to-date with emerging trends and technologies in web development.</li>
+                        <li>Collaborate with the design team to create a visually appealing website layout and user interface.</li>
+                        <li>Develop and maintain website features and functionality.</li>
+                        <li>Optimize the website for maximum speed, scalability, and user experience.</li>
+                        <li>Ensure website accessibility and compatibility across different browsers and devices.</li>
+                        <li>Troubleshoot and debug website issues in a timely manner.</li>
+                        <li>Work closely with back-end developers to seamlessly integrate front-end functionality with back-end systems.</li>
                       </ul>
 
                     </Card.Text>

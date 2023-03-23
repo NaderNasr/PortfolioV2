@@ -5,9 +5,29 @@
   z-index: 999px;
 }
 
+.project-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.project-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
 .projects-text-container {
   padding: 10em;
   z-index: 999px;
+  color: white;
 }
 
 .projects-text-header {
@@ -17,15 +37,15 @@
   z-index: 999999999999999px;
 }
 
-.project-button {
-  display: flex;
-  justify-content: space-between;
-}
-
 .project-card {
   width: 50;
   height: 20rem;
   margin: 0em;
+  background: rgba(62, 55, 55, 0.269);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
 #circle-large {
@@ -101,7 +121,7 @@
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 55px);
+    transform: translate(0, 65px);
   }
   100% {
     transform: translate(0, -0px);
@@ -156,6 +176,5 @@
     margin: auto;
     width: 20rem;
     height: 20rem;
-    
   }
 }

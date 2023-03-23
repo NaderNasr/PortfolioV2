@@ -43,7 +43,7 @@ const Project = () => {
           </ParallaxProvider>
         }
           <Container>
-            <Row xs={1} md={2}>
+            <Row xs={1} md={3}>
               {Data.map((_, id) => (
                 <>
                 <Col key={id} >
