@@ -3,6 +3,8 @@ import emailjs from 'emailjs-com';
 import './styles.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailValidator from 'email-validator';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,29 +13,40 @@ const Contact = () => {
     message: '',
   });
 
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+
+  const handleCaptchaChange = (value) => {
+    setIsCaptchaValid(true);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send the form data using EmailJS
-    emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      e.target,
-      process.env.REACT_APP_USER_ID
-    )
-      .then((result) => {
-        console.log(result.text);
-        // Clear the form data if the email was sent successfully
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
+    if (isCaptchaValid && emailValidator.validate(formData.email)) {
+      // Send the form data using EmailJS
+      emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_USER_ID
+      )
+        .then((result) => {
+          console.log(result.text);
+          // Clear the form data if the email was sent successfully
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
+          setIsCaptchaValid(false);
+          toast.success('Thank you 🥰 Will reply 2 - 4 days!');
+        }, (error) => {
+          console.log(error.text);
+          toast.error('Error sending email 😭');
         });
-        toast.success('Thank you 🥰 Will reply 2 - 4 days!');
-      }, (error) => {
-        console.log(error.text);
-        toast.error('Error sending email 😭');
-      });
+    } else {
+      toast.error('Please check your email address or complete the reCAPTCHA');
+    }
   };
 
   return (
@@ -78,6 +91,12 @@ const Contact = () => {
             required
           ></textarea>
         </div>
+        <div className="form-group">
+          <ReCAPTCHA
+            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+            onChange={handleCaptchaChange}
+          />
+        </div>
         <button type="submit" className="btn btn-primary">
           Send
         </button>
@@ -93,7 +112,7 @@ const Contact = () => {
         draggable
         pauseOnHover
         theme="dark"
-        style={{ marginBottom: '50px', width:'500px' }}
+        style={{ marginBottom: '50px', width: '500px' }}
       />
     </div>
   );
