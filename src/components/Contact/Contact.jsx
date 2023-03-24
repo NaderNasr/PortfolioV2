@@ -93,6 +93,7 @@ const Contact = () => {
         </div>
         <div className="form-group">
           <ReCAPTCHA
+            className="g-recaptcha"
             sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
             onChange={handleCaptchaChange}
           />

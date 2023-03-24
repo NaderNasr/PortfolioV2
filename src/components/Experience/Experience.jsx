@@ -54,35 +54,6 @@ const Experience = () => {
       </Helmet>
       <div className='experience-text-container'>
         <p className='experience-text-header'>Experience<hr /></p>
-        {isMobile() &&
-          <ParallaxProvider>
-
-            <Parallax speed={50}>
-
-              <div className='floating' id='circle-small' style={{
-                right: '100px',
-                bottom: '200px'
-              }} />
-            </Parallax>
-
-            <Parallax speed={50}>
-
-              <div className='floating2' id='circle-small2' style={{
-                right: '150px',
-                bottom: '400px'
-              }} />
-            </Parallax>
-
-            <Parallax speed={10}>
-
-              <div className='floating3' id='circle-small3' style={{
-                right: '200px',
-                bottom: '200px'
-              }} />
-            </Parallax>
-
-          </ParallaxProvider>
-        }
         <div style={{ marginBottom: '40px' }}>
           <motion.div
             initial={{ opacity: 0, x: 300 }}

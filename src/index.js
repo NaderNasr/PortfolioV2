@@ -5,35 +5,35 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
-// const me = {
-//   Name: "Nader Nasr",
-//   Location: "Toronto, Ontario",
-//   github: "https://github.com/NaderNasr",
-//   LinkedIn: "https://www.linkedin.com/in/nnasr/",
-//   YearsOfExperience: 5,
-// };
+const me = {
+  Name: "Nader Nasr",
+  Location: "Toronto, Ontario",
+  github: "https://github.com/NaderNasr",
+  LinkedIn: "https://www.linkedin.com/in/nnasr/",
+  YearsOfExperience: 3,
+};
 
-// const skills =
-// {
-//   Languages: ["JavaScript (ES6+)", "Ruby", "Ruby on Rails"],
-//   FrontEnd: ["ReactJS", "React Native", "Axios", "Webpack", "CSS", "HTML", "Svelte"],
-//   BackEnd: ["Express", "Node.js", "PostgreSQL", "AWS"],
-//   UnitTesting: ["Jest", "Cypress", "Mocha/Chai", "StoryBook"],
-//   UI: ["Adobe Suit", "Figma", "Adobe XD"]
-// };
-
-
-
-
-
-// console.log('TL:DR');
-// console.table(me);
-// console.table(skills);
+const skills =
+{
+  Languages: ["JavaScript (ES6+)", "Ruby", "Ruby on Rails"],
+  FrontEnd: ["ReactJS", "React Native", "Axios", "Webpack", "CSS", "HTML", "Svelte"],
+  BackEnd: ["Express", "Node.js", "PostgreSQL", "AWS"],
+  UnitTesting: ["Jest", "Cypress", "Mocha/Chai", "StoryBook"],
+  UI: ["Adobe Suit", "Figma", "Adobe XD"]
+};
 
 
 
 
-// console.log = console.warn = console.error = () => {  };
+
+console.log('TL:DR');
+console.table(me);
+console.table(skills);
+
+
+
+
+console.log = console.warn = console.error = () => {  };
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
