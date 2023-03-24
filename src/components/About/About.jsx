@@ -2,12 +2,23 @@ import React from 'react'
 import './styles.css'
 import { motion } from 'framer-motion'
 import { Badge, Col, Container, Row } from 'react-bootstrap'
+import { Helmet } from 'react-helmet'
 
 const About = () => {
   return (
 
     <>
-
+      <Helmet>
+        <title>About Me | Nader's Portfolio</title>
+        <meta
+          name="description"
+          content="Learn more about Nader, an experienced React Developer based in Toronto. With a dynamic and versatile skill set, Nader has a proven track record of creating user-friendly web applications. His expertise lies in front-end web development, where he consistently delivers impactful results while collaborating seamlessly with managers and senior developers. Technologies and skills: React, Axios, Webpack, CSS, HTML, Svelte, Express, Node.js, PostgreSQL, AWS, JavaScript (ES6+), Ruby on Rails, Ruby, Jest, Cypress, Mocha/Chai, Figma, StoryBook, AdobeXD / Adobe Suit, Jira, Trello, React Helmet"
+        />
+        <meta name='description' content='Learn more about me and my experience as a React developer. I specialize in creating dynamic and user-friendly web applications.' />
+        <meta name='keywords' content='React, developer, web development, user-friendly, dynamic, experience' />
+        <meta name='author' content='Nader Nasr' />
+        <meta property='og:title' content='About Me | My React Portfolio' />
+      </Helmet>
       <div className='about-container'>
         <Container>
           <Row>
@@ -22,7 +33,7 @@ const About = () => {
                 >
                   <div>
                     <p className='about-text-desc'>
-                    Hey there, fellow internet enthusiasts! My name is Nader, and I'm addicted to creating awesome digital experiences. Back in 2017, while working as a technical project manager, I stumbled upon the world of web development and fell head over heels in love with it. I couldn't resist tinkering around with JavaScript, HTML, and CSS in my free time, and the rest is history! I'm absolutely stoked to keep honing my skills and ride the wave of innovation in this dynamic field. Let's create some seriously rad stuff together, shall we?
+                      Hey there, fellow internet enthusiasts! My name is Nader, and I'm addicted to creating awesome digital experiences. Back in 2017, while working as a technical project manager, I stumbled upon the world of web development and fell head over heels in love with it. I couldn't resist tinkering around with JavaScript, HTML, and CSS in my free time, and the rest is history! I'm absolutely stoked to keep honing my skills and ride the wave of innovation in this dynamic field. Let's create some seriously rad stuff together, shall we?
                     </p>
                     <br />
                     <p className='about-text-desc'>
@@ -41,6 +52,7 @@ const About = () => {
                           <Badge>CSS</Badge>{' '}
                           <Badge>HTML</Badge>{' '}
                           <Badge>Svelte</Badge>{' '}
+                          <Badge>SEO</Badge>{' '}
                         </ul>
 
                         <p className='about-list-title'>BACK-END:</p>
@@ -48,7 +60,6 @@ const About = () => {
                           <Badge>Express</Badge>{' '}
                           <Badge>Node.js</Badge>{' '}
                           <Badge>PostgreSQL</Badge>{' '}
-                          <Badge>AWS</Badge>{' '}
                         </ul>
                       </Col>
                       <Col>

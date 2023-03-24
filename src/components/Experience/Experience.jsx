@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import './styles.css'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 import isMobile from 'is-mobile'
+import { Helmet } from 'react-helmet'
 
 
 
@@ -40,6 +41,17 @@ const Experience = () => {
 
   return (
     <div className='experience-container'>
+      <Helmet>
+        <title>Experience | Nader's Portfolio</title>
+        <meta
+          name="description"
+          content="Discover Nader's experience as a front-end web developer with a track record of delivering impactful results. Check out the technologies and skills that he has mastered to create user-friendly web applications."
+        />
+        <meta name='keywords' content='experience, web development, front-end, React, Node.js, AWS, Three.js, Unity, VR, mobile app, SEO' />
+        <meta name='author' content='Nader Nasr' />
+        <meta property='og:title' content='Experience | Naders Portfolio' />
+        <meta property='og:description' content='Discover Naders experience as a front-end web developer with a track record of delivering impactful results Check out the technologies and skills that he has mastered to create user-friendly web applications' />
+      </Helmet>
       <div className='experience-text-container'>
         <p className='experience-text-header'>Experience<hr /></p>
         {isMobile() &&
