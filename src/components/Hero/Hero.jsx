@@ -61,9 +61,9 @@ const Hero = () => {
               I’m a web developer specializing in building
               and designing exceptional digital experiences.
             </p>
-            <div style={{ marginBottom: '20px' }}>
+            {/* <div style={{ marginBottom: '20px' }}>
               <Button onClick={handleLearnMore} style={{ marginBottom:'20px', marginTop:'20px' }}>Learn more</Button>
-            </div>
+            </div> */}
             {isMobile() ?
               <></>
               :
