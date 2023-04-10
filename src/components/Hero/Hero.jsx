@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import './styles.css';
 import { motion } from 'framer-motion';
 import isMobile from 'is-mobile';
-import { Button } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
 import intro from '../../assets/Intro.mp4'
 
@@ -61,9 +60,6 @@ const Hero = () => {
               I’m a web developer specializing in building
               and designing exceptional digital experiences.
             </p>
-            {/* <div style={{ marginBottom: '20px' }}>
-              <Button onClick={handleLearnMore} style={{ marginBottom:'20px', marginTop:'20px' }}>Learn more</Button>
-            </div> */}
             {isMobile() ?
               <></>
               :
