@@ -2,23 +2,11 @@ import React from 'react'
 import './styles.css'
 import { motion } from 'framer-motion'
 import { Badge, Col, Container, Row } from 'react-bootstrap'
-import { Helmet } from 'react-helmet'
 
 const About = () => {
   return (
 
     <>
-      <Helmet>
-        <title>About Me | Nader's Portfolio</title>
-        <meta
-          name="description"
-          content="Learn more about Nader, an experienced React Developer based in Toronto. With a dynamic and versatile skill set, Nader has a proven track record of creating user-friendly web applications. His expertise lies in front-end web development, where he consistently delivers impactful results while collaborating seamlessly with managers and senior developers. Technologies and skills: React, Axios, Webpack, CSS, HTML, Svelte, Express, Node.js, PostgreSQL, AWS, JavaScript (ES6+), Ruby on Rails, Ruby, Jest, Cypress, Mocha/Chai, Figma, StoryBook, AdobeXD / Adobe Suit, Jira, Trello, React Helmet"
-        />
-        <meta name='description' content='Learn more about me and my experience as a React developer. I specialize in creating dynamic and user-friendly web applications.' />
-        <meta name='keywords' content='React, developer, web development, user-friendly, dynamic, experience' />
-        <meta name='author' content='Nader Nasr' />
-        <meta property='og:title' content='About Me | My React Portfolio' />
-      </Helmet>
       <div className='about-container'>
         <Container>
           <Row>
