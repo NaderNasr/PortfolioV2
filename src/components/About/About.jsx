@@ -25,7 +25,7 @@ const About = () => {
                     </p>
                     <br />
                     <p className='about-text-desc'>
-                      Below are the technologies I am currently working with:
+                      Skills:
                     </p>
                   </div>
                   <br />
@@ -35,6 +35,7 @@ const About = () => {
                         <p className='about-list-title'>FRONT-END:</p>
                         <ul className='about-list'>
                           <Badge>React</Badge>{' '}
+                          <Badge>React Native</Badge>{' '}
                           <Badge>Axios</Badge>{' '}
                           <Badge>Webpack</Badge>{' '}
                           <Badge>CSS</Badge>{' '}
@@ -54,8 +55,7 @@ const About = () => {
                         <p className='about-list-title'>LANGUAGES:</p>
                         <ul className='about-list'>
                           <Badge>JavaScript (ES6+)</Badge>{' '}
-                          <Badge>Ruby on Rails</Badge>{' '}
-                          <Badge>Ruby</Badge>{' '}
+                          <Badge>TypeScript</Badge>{' '}
                         </ul>
 
                         <p className='about-list-title'>TESTING:</p>
@@ -72,7 +72,7 @@ const About = () => {
                         <ul className='about-list'>
                           <Badge>Figma</Badge>{' '}
                           <Badge>StoryBook</Badge>{' '}
-                          <Badge>AdobeXD / Adobe Suit</Badge>{' '}
+                          <Badge>Adobe Suit</Badge>{' '}
                         </ul>
 
                         <p className='about-list-title'>TEAM WORK:</p>

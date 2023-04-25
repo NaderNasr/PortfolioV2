@@ -3,23 +3,9 @@ import React, { useState } from 'react';
 import './styles.css';
 import { motion } from 'framer-motion';
 import isMobile from 'is-mobile';
-import Modal from 'react-bootstrap/Modal';
-import intro from '../../assets/Intro.mp4'
-
-const VideoModal = ({ showModal, handleClose }) => {
-  return (
-    <Modal show={showModal} onHide={handleClose} centered className="video-modal">
-        <video src={intro} controls autoPlay width="100%"/>
-    </Modal>
-  );
-};
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
-
-  const handleLearnMore = () => {
-    setShowModal(true)
-  };
 
   return (
     <>
@@ -72,7 +58,6 @@ const Hero = () => {
         </div>
         <div className='blob_2 hero-circle' style={{zIndex: -99
         }}></div>
-        <VideoModal showModal={showModal} handleClose={() => setShowModal(false)} />
       </div>
 
     </>

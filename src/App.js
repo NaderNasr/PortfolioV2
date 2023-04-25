@@ -14,7 +14,7 @@ import './App.css'
 
 const App = () => {
 
-  const TRACKING_ID = 'UA-163447962-1';
+  const TRACKING_ID = 'UA-163447962-1' || 'G-09Y4Z0FMWP';
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
 
