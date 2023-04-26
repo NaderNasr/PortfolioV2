@@ -5,7 +5,6 @@
   top: 0px;
   z-index: 999999;
   background: rgba(69, 4, 175, 0);
-  /* box-shadow: 0 5px 32px 0 rgba(91, 102, 242, 0.37); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 0px 0px 10px 10px;

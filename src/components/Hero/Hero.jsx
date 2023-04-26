@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
-// import TextLoop from "react-text-loop";
+import React from 'react';
 import './styles.css';
 import { motion } from 'framer-motion';
 import isMobile from 'is-mobile';
 
 const Hero = () => {
-  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
