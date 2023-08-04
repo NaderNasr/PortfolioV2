@@ -14,9 +14,6 @@ const Experience = () => {
   const [readMore5, setReadMore5] = useState(false);
 
 
-
-
-
   const toggleReadMore = () => {
     setReadMore(!readMore)
   }
@@ -55,7 +52,7 @@ const Experience = () => {
             >
               <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <p>Memory Jar - Toronto, Ontario</p>
-                <p>Dec 2022 - Current</p>
+                <p>Dec 2022 - June 2023</p>
               </Card.Header>
               <Card.Body>
                 <Card.Title>Product Development - Front-End Developer</Card.Title>
