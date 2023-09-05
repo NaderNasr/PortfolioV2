@@ -2,14 +2,13 @@ import React from 'react'
 import { Badge, Card, Button } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import './styles.css'
-import AnimatedCursor from "react-animated-cursor"
+
 
 const ProjectItem = ({ _ }) => {
 
   return (
 
     <div>
-      <AnimatedCursor />
       <motion.div
         initial={{ opacity: 0, x: 300 }}
         transition={{ ease: "easeOut", duration: 1.2 }}

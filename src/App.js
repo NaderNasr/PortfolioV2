@@ -4,7 +4,6 @@ import Home from './../src/components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 
 
-
 const App = () => {
 
   const TRACKING_ID = 'G-09Y4Z0FMWP';
@@ -17,6 +16,7 @@ const App = () => {
     <>
       <Router>
         <Routes>
+        
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

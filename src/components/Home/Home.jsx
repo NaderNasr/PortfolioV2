@@ -6,13 +6,15 @@ import About from '../About/About'
 import Project from '../Projects/ProjectGrid/Project'
 import Experience from '../Experience/Experience'
 import Contact from '../Contact/Contact'
-import 'custom-cursor-react/dist/index.css';
+import AnimatedCursor from "react-animated-cursor"
+
 import './Home.css'
 
 const Home = () => {
   return (
     <div style={{ backgroundColor: '#0B192E' }}>
-    <Header />
+      <AnimatedCursor />
+      <Header />
       <Helmet>
         <title>Nader Developer Portfolio | Freelance, Full-time, Project Manager, Contract | Toronto</title>
         <meta name="description" content="As a dynamic and versatile React JS Developer based in Toronto, I deliver user-friendly web applications for freelance, full-time, project manager, and contract positions. With a proven track record of staying up-to-date with the latest technology and collaborating seamlessly with managers and senior developers." />
