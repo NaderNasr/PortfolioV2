@@ -55,7 +55,7 @@ const Experience = () => {
                 <p>Dec 2022 - June 2023</p>
               </Card.Header>
               <Card.Body>
-                <Card.Title>Product Development - Front-End Developer</Card.Title>
+                <Card.Title>Senior Front-End Developer</Card.Title>
                 {readMore5 ?
                   <>
                     <Card.Text>
@@ -110,7 +110,7 @@ const Experience = () => {
                 <p>Sept 2022 - Dec 2022</p>
               </Card.Header>
               <Card.Body>
-                <Card.Title>Front-End Web Developer</Card.Title>
+                <Card.Title>Senior Front-End Developer</Card.Title>
                 {readMore4 ?
                   <>
                     <Card.Text>
@@ -161,7 +161,7 @@ const Experience = () => {
               <p>Jan 2019 - Dec 2019</p>
             </Card.Header>
             <Card.Body>
-              <Card.Title>Front-End Web Developer</Card.Title>
+              <Card.Title>Front-End Developer</Card.Title>
               {readMore ?
                 <>
                   <Card.Text>

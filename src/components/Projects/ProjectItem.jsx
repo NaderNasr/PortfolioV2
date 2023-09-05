@@ -2,25 +2,14 @@ import React from 'react'
 import { Badge, Card, Button } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 import './styles.css'
-import CustomCursor from 'custom-cursor-react'
+import AnimatedCursor from "react-animated-cursor"
 
 const ProjectItem = ({ _ }) => {
 
   return (
 
     <div>
-      <CustomCursor
-        targets={['.Button']}
-        customClass='custom-cursor'
-        dimensions={30}
-        fill='purple'
-        smoothness={{
-          movement: 0.088,
-          scale: 0.01,
-          opacity: 1,
-        }}
-        targetOpacity={1}
-      />
+      <AnimatedCursor />
       <motion.div
         initial={{ opacity: 0, x: 300 }}
         transition={{ ease: "easeOut", duration: 1.2 }}

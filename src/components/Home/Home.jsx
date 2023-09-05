@@ -1,4 +1,3 @@
-import CustomCursor from 'custom-cursor-react'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Header from '../Header/Header'
@@ -24,19 +23,6 @@ const Home = () => {
         <meta property="og:url" content="https://nadernasr.ca" />
         <meta name="twitter:description" content="As a dynamic and versatile React JS Developer based in Toronto, I deliver user-friendly web applications for freelance, full-time, project manager, and contract positions. With a proven track record of staying up-to-date with the latest technology and collaborating seamlessly with managers and senior developers." />
       </Helmet>
-      <CustomCursor
-        targets={['Button']}
-        customClass='custom-cursor'
-        dimensions={30}
-        fill='#0500ff'
-        smoothness={{
-          movement: 0.2,
-          scale: 0.2,
-          opacity: 0.4,
-        }}
-        targetOpacity={0.3}
-      />
-      
       <Hero />
       <About />
       <Project />

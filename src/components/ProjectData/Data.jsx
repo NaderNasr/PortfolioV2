@@ -92,25 +92,25 @@ const Data = [
   {
     id: 8,
     number: '00',
-    title: 'QR Gen',
-    text: 'A QR Code Generator',
-    badge: ['HTML', 'Tailwind', 'Javascript', 'QR Code JS'],
-    image: 'https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
-    GitHub: 'Github',
-    link: 'https://github.com/NaderNasr/Vanilla-JS---QRcode-Generator',
-    site: 'https://qr-gen-nader.netlify.app'
-  },
-  {
-    id: 9,
-    number: '00',
     title: 'Block Chain Explorer',
-    text: 'Block Chain Explorer allows the user to view the balance of the address as well as input either an Ethereum or Polygon address and see history transactions, gas prices, and values of the transactions.',
+    text: 'The Block Chain Explorer enables users to check address balances and view transaction history, gas prices, and transaction values for both Ethereum and Polygon addresses.',
     badge: ['React JS', 'TypeScript', 'API', 'Axios', 'PolyScan', 'Etherscan'],
     image: 'https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
     GitHub: 'Github',
     link: 'https://github.com/NaderNasr/Block-chain-explorer',
     site: 'https://blockchain-explorer-test.netlify.app/'
-  }
+  },
+  {
+    id: 9,
+    number: '00',
+    title: 'Briefly',
+    text: 'An article summarization web app powered by OpenAIs GPT-4 model',
+    badge: ['Vite', 'Tailwind', 'Javascript', 'OpenAI'],
+    image: 'https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+    GitHub: 'Github',
+    link: 'https://github.com/NaderNasr/Briefly',
+    site: 'https://brieflyai-nader.netlify.app/'
+  },
 ]
 
 export default Data;
