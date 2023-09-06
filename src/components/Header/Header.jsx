@@ -31,7 +31,7 @@ const Header = () => {
                 <FaLinkedin size={20}/>
                 </div>
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 href={resume}
                 target="_blank"
                 rel="noreferrer noopener"
@@ -39,7 +39,7 @@ const Header = () => {
                 variant="outline-primary"
               >
                 <p className='resume'>Resume</p>
-              </Nav.Link>
+              </Nav.Link> */}
             </div>
           </Navbar.Collapse>
         </Container>

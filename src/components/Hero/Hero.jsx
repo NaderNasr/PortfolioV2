@@ -44,14 +44,6 @@ const Hero = () => {
               I’m a web developer specializing in building
               and designing exceptional digital experiences.
             </p>
-            {isMobile() ?
-              <></>
-              :
-              <>
-                <p className='text-pronunciation'>TL:DR {'>>'} open console</p>
-              </>
-
-            }
           </motion.div>
         </div>
         <div className='blob_2 hero-circle' style={{zIndex: -99

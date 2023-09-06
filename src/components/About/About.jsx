@@ -38,25 +38,31 @@ const About = () => {
                         <ul className='about-list'>
                           <Badge>React</Badge>{' '}
                           <Badge>React Native</Badge>{' '}
-                          <Badge>Axios</Badge>{' '}
+                          <Badge>NextJs</Badge>{' '}
+                          <Badge>API</Badge>{' '}
                           <Badge>Webpack</Badge>{' '}
                           <Badge>CSS</Badge>{' '}
                           <Badge>HTML</Badge>{' '}
-                          <Badge>Svelte</Badge>{' '}
                           <Badge>SEO</Badge>{' '}
+                          <Badge>SEO</Badge>{' '}
+                          <Badge>Responsive Design</Badge>{' '}
+                          <Badge>Bootstrap</Badge>{' '}
+                          <Badge>Material UI</Badge>{' '}
+                          <Badge>Styled Components</Badge>{' '}
+                          <Badge>Tailwind</Badge>{' '}
                         </ul>
 
-                        <p className='about-list-title'>BACK-END:</p>
+                        {/* <p className='about-list-title'>BACK-END:</p>
                         <ul className='about-list'>
                           <Badge>Express</Badge>{' '}
                           <Badge>Node.js</Badge>{' '}
                           <Badge>PostgreSQL</Badge>{' '}
-                        </ul>
+                        </ul> */}
                       </Col>
                       <Col>
                         <p className='about-list-title'>LANGUAGES:</p>
                         <ul className='about-list'>
-                          <Badge>JavaScript (ES6+)</Badge>{' '}
+                          <Badge>JavaScript</Badge>{' '}
                           <Badge>TypeScript</Badge>{' '}
                         </ul>
 
