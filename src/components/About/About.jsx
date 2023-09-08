@@ -44,6 +44,7 @@ const About = () => {
                           <Badge>CSS</Badge>{' '}
                           <Badge>HTML</Badge>{' '}
                           <Badge>SEO</Badge>{' '}
+                          <Badge>NodeJs</Badge>{' '}
                           <Badge>Responsive Design</Badge>{' '}
                           <Badge>Bootstrap</Badge>{' '}
                           <Badge>Material UI</Badge>{' '}
