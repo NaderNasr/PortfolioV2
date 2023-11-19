@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './../src/components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
@@ -6,7 +6,7 @@ import NotFound from './components/NotFound/NotFound';
 
 const App = () => {
 
-  const TRACKING_ID = 'G-09Y4Z0FMWP';
+  const TRACKING_ID = 'G-L0ZBB6C5SL';
   ReactGA.initialize(TRACKING_ID);
   ReactGA.pageview(window.location.pathname + window.location.search);
 
