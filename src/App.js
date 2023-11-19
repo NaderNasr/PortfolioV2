@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga4';
+import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './../src/components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
