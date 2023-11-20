@@ -26,7 +26,6 @@ hr {
   color: white;
   font-family: Poppins;
   font-size: 25px;
-  /* width: 55vw; */
 }
 
 .about-list > li {
@@ -38,7 +37,9 @@ hr {
 .about-list-title {
   font-family: Roboto Mono;
   color: #fc9e4f;
-  margin-left: 30px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  padding-top: 15px;
 }
 
 @media (max-width: 767px) {

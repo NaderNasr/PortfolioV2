@@ -26,7 +26,7 @@
 }
 
 .text-container {
-  padding: 10em;
+  padding: 7em;
 }
 
 .text {
@@ -38,7 +38,7 @@
 .text-pronunciation {
   color: #fc9e4f;
   font-family: Roboto Mono;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 #hero-circle-small {
