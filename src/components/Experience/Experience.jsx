@@ -45,7 +45,6 @@ const Experience = () => {
             whileInView={{ opacity: 1, x: 0 }}
           >
             <Card
-              
               text='white'
               style={{ width: '100%' }}
               className="mb-2 experience-card bg-gray-800"
@@ -55,20 +54,20 @@ const Experience = () => {
                 <p>Dec 2022 - June 2023</p>
               </Card.Header>
               <Card.Body>
-                <Card.Title>Senior Front-End Developer</Card.Title>
+                <h1 className='text-3xl mb-4 font-extrabold'>Senior Front-End Developer</h1>
                 {readMore5 ?
                   <>
                     <Card.Text>
                       <ul>
-                        <li>Collaborate closely and translate the founders' ideas into functional components in React Native.</li>
-                        <li>Converting Figma UX/UI designs into mobile app components (iOS/Android).</li>
-                        <li>Write efficient and maintainable code using HTML, CSS, and JavaScript.</li>
-                        <li>Collaborate with back-end developers to connect API endpoints to the front end..</li>
-                        <li>Implement SEO best practices to improve website visibility and search engine ranking</li>
-                        <li>Documentation</li>
+                        <li className='mb-4'>· Collaborate closely and translate the founders' ideas into functional components in React Native.</li>
+                        <li className='mb-4'>· Converting Figma UX/UI designs into mobile app components (iOS/Android).</li>
+                        <li className='mb-4'>· Write efficient and maintainable code using HTML, CSS, and JavaScript.</li>
+                        <li className='mb-4'>· Collaborate with back-end developers to connect API endpoints to the front end..</li>
+                        <li className='mb-4'>· Implement SEO best practices to improve website visibility and search engine ranking</li>
+                        <li className='mb-4'>· Created documentation for on boarding developers</li>
                       </ul>
                     </Card.Text>
-                    <span onClick={toggleReadMore5} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                    <span onClick={toggleReadMore5} className='text-yellow-400 cursor-pointer text-xl'>Close</span>
                   </>
                   :
                   <>
@@ -110,22 +109,22 @@ const Experience = () => {
                 <p>Sept 2022 - Dec 2022</p>
               </Card.Header>
               <Card.Body>
-                <Card.Title>Senior Front-End Developer</Card.Title>
+                <h1 className='text-3xl mb-4 font-extrabold'>Senior Front-End Developer</h1>
                 {readMore4 ?
                   <>
                     <Card.Text>
                       <ul>
-                        <li>Stay up-to-date with emerging trends and technologies in web development.</li>
-                        <li>Collaborate with the design team to create a visually appealing website layout and user interface.</li>
-                        <li>Develop and maintain website features and functionality.</li>
-                        <li>Optimize the website for maximum speed, scalability, and user experience.</li>
-                        <li>Ensure website accessibility and compatibility across different browsers and devices.</li>
-                        <li>Troubleshoot and debug website issues in a timely manner.</li>
-                        <li>Work closely with back-end developers to seamlessly integrate front-end functionality with back-end systems.</li>
+                        <li className='mb-4'>· Stay up-to-date with emerging trends and technologies in web development.</li>
+                        <li className='mb-4'>· Collaborate with the design team to create a visually appealing website layout and user interface.</li>
+                        <li className='mb-4'>· Develop and maintain website features and functionality.</li>
+                        <li className='mb-4'>· Optimize the website for maximum speed, scalability, and user experience.</li>
+                        <li className='mb-4'>· Ensure website accessibility and compatibility across different browsers and devices.</li>
+                        <li className='mb-4'>· Troubleshoot and debug website issues in a timely manner.</li>
+                        <li className='mb-4'>· Work closely with back-end developers to seamlessly integrate front-end functionality with back-end systems.</li>
                       </ul>
 
                     </Card.Text>
-                    <span onClick={toggleReadMore4} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                    <span onClick={toggleReadMore4} className='text-yellow-400 cursor-pointer text-xl'>Close</span>
                   </>
                   :
                   <>
@@ -161,7 +160,7 @@ const Experience = () => {
               <p>Jan 2019 - Dec 2019</p>
             </Card.Header>
             <Card.Body>
-              <Card.Title>Front-End Developer</Card.Title>
+              <h1 className='text-3xl mb-4 font-extrabold'>Front-End Developer</h1>
               {readMore ?
                 <>
                   <Card.Text>
@@ -170,10 +169,10 @@ const Experience = () => {
                     <ul>
                       <br />
                       <p>Key Achievements:</p>
-                      <li>Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
+                      <li className='mb-4'>· Launched the OjaBox website using Reactjs, AWS, NodeJs, ThreeJs, Material UI</li>
                     </ul>
                   </Card.Text>
-                  <span onClick={toggleReadMore} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                  <span onClick={toggleReadMore} className='text-yellow-400 cursor-pointer text-xl'>Close</span>
                 </>
                 :
                 <>
@@ -208,7 +207,7 @@ const Experience = () => {
               <p>Aug 2016 - Jan 2018</p>
             </Card.Header>
             <Card.Body>
-              <Card.Title>Technical Project Manager</Card.Title>
+              <h1 className='text-3xl mb-4 font-extrabold'>Technical Project Manager</h1>
 
               {readMore2 ?
                 <>
@@ -219,11 +218,11 @@ const Experience = () => {
                     <ul>
                       <br />
                       <p>Key Achievements:</p>
-                      <li>Achieved the original launch deadline date by overcoming various technical issues without affecting
+                      <li className='mb-4'>· Achieved the original launch deadline date by overcoming various technical issues without affecting
                         performance and helped grow downloads from 50,000 in the first year to over 500,000 in the second year by optimizing the functionality</li>
                     </ul>
                   </Card.Text>
-                  <span onClick={toggleReadMore2} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                  <span onClick={toggleReadMore2} className='text-yellow-400 cursor-pointer text-xl'>Close</span>
                 </>
                 :
                 <>
@@ -259,7 +258,7 @@ const Experience = () => {
               <p>Aug 2014 - Jan 2016</p>
             </Card.Header>
             <Card.Body>
-              <Card.Title>Junior Virtual Reality Unity3D Developer</Card.Title>
+              <h1 className='text-3xl mb-4 font-extrabold'>Junior Virtual Reality Unity3D Developer</h1>
               {readMore3 ?
                 <>
                   <Card.Text>
@@ -268,11 +267,11 @@ const Experience = () => {
                     <ul>
                       <br />
                       <p>Key Achievements:</p>
-                      <li>Created an interactive digital comic book for kids using Unity 5 that could be played on their mobile devices.</li>
+                      <li className='mb-4'>· Created an interactive digital comic book for kids using Unity 5 that could be played on their mobile devices.</li>
                     </ul>
 
                   </Card.Text>
-                  <span onClick={toggleReadMore3} style={{ color: '#E200FF', cursor: 'pointer' }}>Read Less</span>
+                  <span onClick={toggleReadMore3} className='text-yellow-400 cursor-pointer text-xl'>Close</span>
                 </>
                 :
                 <>
