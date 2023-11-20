@@ -34,9 +34,9 @@ const Experience = () => {
   }
 
   return (
-    <div className='experience-container'>
-      <div className='experience-text-container'>
-        <p className='experience-text-header'>Experience<hr /></p>
+    <div className='experience-container '>
+      <div className='experience-text-container '>
+        <p className='experience-text-header mb-4'>Experience<hr /></p>
         <div style={{ marginBottom: '40px' }}>
           <motion.div
             initial={{ opacity: 0, x: 300 }}
@@ -45,10 +45,10 @@ const Experience = () => {
             whileInView={{ opacity: 1, x: 0 }}
           >
             <Card
-              bg='dark'
+              
               text='white'
               style={{ width: '100%' }}
-              className="mb-2 experience-card"
+              className="mb-2 experience-card bg-gray-800"
             >
               <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <p>Memory Jar - Toronto, Ontario</p>
@@ -100,10 +100,10 @@ const Experience = () => {
             whileInView={{ opacity: 1, x: 0 }}
           >
             <Card
-              bg='dark'
+              
               text='white'
               style={{ width: '100%' }}
-              className="mb-2 experience-card"
+              className="mb-2 experience-card bg-gray-800"
             >
               <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <p>New Idea Machine - Calgary, Alberta</p>
@@ -150,10 +150,10 @@ const Experience = () => {
           whileInView={{ opacity: 1, x: 0 }}
         >
           <Card
-            bg='dark'
+            
             text='white'
             style={{ width: '100%' }}
-            className="mb-2 experience-card"
+            className="mb-2 experience-card bg-gray-800"
 
           >
             <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -198,10 +198,10 @@ const Experience = () => {
           whileInView={{ opacity: 1, x: 0 }}
         >
           <Card
-            bg='dark'
+            
             text='white'
             style={{ width: '100%' }}
-            className="mb-2 experience-card"
+            className="mb-2 experience-card bg-gray-800"
           >
             <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
               <p>360VUZ - Dubai, UAE</p>
@@ -249,10 +249,10 @@ const Experience = () => {
         >
 
           <Card
-            bg='dark'
+            
             text='white'
             style={{ width: '100%' }}
-            className="mb-2 experience-card"
+            className="mb-2 experience-card bg-gray-800"
           >
             <Card.Header style={{ display: 'flex', justifyContent: 'space-between' }}>
               <p>Rubicon Group Holding - Amman, Jordan</p>
